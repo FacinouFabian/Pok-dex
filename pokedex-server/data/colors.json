@@ -1,0 +1,18 @@
+{
+  "normal": "bg-light",
+  "feu": "bg-danger",
+  "eau": "bg-info",
+  "plante": "bg-success",
+  "électrique": "bg-warning",
+  "insecte": "insecte",
+  "roche": "roche",
+  "sol": "list-group-item-warning",
+  "acier": "bg-secondary",
+  "poison": "poison",
+  "combat": "combat",
+  "spectre": "bg-dark",
+  "psy": "list-group-item-danger",
+  "glace": "list-group-item-info",
+  "dragon": "dragon",
+  "vol": "list-group-item-dark"
+}
