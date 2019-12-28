@@ -1,0 +1,41 @@
+à rendre le 27/12/2019
+
+			### POKÉDEX ####
+
+## REACT ##
+affiche tous les poké (image, détails)
+
+filtrer(par nom, taille, id, type)
+
+gestion d'erreur
+
+##Serveur##
+
+une route vers tous les pokémons
+
+une route vers un pokémon particulier
+
+##TIPS##
+
+peut utiliser :
+
+create-react-app (npm install --global create-react-app)
+	npm init react-app pokedex-client
+	ou
+	mkdir pokedex
+	npm init
+	npm install --save-dev create-react-app
+
+bulma (css)
+
+bootstrap (css)
+
+server express (récupération des données)
+
+fetch (méthode pour faire des requetes et récupérer les informations)
+
+
+#	 1 - terminer css page pokémon personnalisé puis css home
+#  2 - terminer filtres (recherche par nom ou ndex, type ou taille)
+#	 3 - ajouter reset filtre recherche
+#	 4 - terminer display evolutions
