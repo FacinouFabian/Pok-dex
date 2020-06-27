@@ -26,7 +26,6 @@ export default class Pokemon extends React.Component {
   }
 
   handleSubmit(event) {
-    const nSize = event.target.value
     const url = this.state.url + this.state.id
     window.location = url
     event.preventDefault();
@@ -111,7 +110,7 @@ export default class Pokemon extends React.Component {
           <title>{pokemons.nomen} {`|`} Pokédex</title>
         </head>
         <div className="pokedex-header">
-          <img src={logo}/>
+          <img src={logo} alt=""/>
         </div>
         <div class="nav">
           <form class="form-group" onSubmit={this.handleSubmit}>
@@ -131,7 +130,7 @@ export default class Pokemon extends React.Component {
           <h1>{pokemons.nom} # {pokemons.numéro}</h1>
 
               <div id='image' class="card-body">
-                <img id='pokemon-img' class="card-img-top" src={`https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${pokemons.ndex}.png`}/>
+                <img alt="" id='pokemon-img' class="card-img-top" src={`https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${pokemons.ndex}.png`}/>
               </div>
 
               <div id='properties' class="card-body">
@@ -155,7 +154,7 @@ export default class Pokemon extends React.Component {
                 <table class="table">
                   <thead class="thead-dark">
                     <tr>
-                      <th colspan="2">{`Capacité\(s\) spéciale\(s\)`}</th>
+                      <th colspan="2">{`Capacité(s) spéciale(s)`}</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -169,7 +168,7 @@ export default class Pokemon extends React.Component {
                 <table class="table">
                   <thead class="thead-dark">
                     <tr>
-                      <th colspan="2">{`Faiblesse\(s\)`}</th>
+                      <th colspan="2">{`Faiblesse(s)`}</th>
                     </tr>
                   </thead>
                   <tbody>

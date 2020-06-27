@@ -25,7 +25,6 @@ export default class Types extends React.Component {
   }
 
   handleSubmit(event) {
-    const nSize = event.target.value
     const url = this.state.url + this.state.id
     window.location = url
     event.preventDefault();
@@ -95,7 +94,7 @@ export default class Types extends React.Component {
     const listItems = pokemons.map((pokemon) =>
     <div class="deck">
       <div class="card" key={pokemon.ndex}>
-        <a href={`http://localhost:3000/pokemon/${pokemon.ndex}`}><img class="card-img-top" src={`https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${pokemon.ndex}.png`}/></a>
+        <a href={`http://localhost:3000/pokemon/${pokemon.ndex}`}><img class="card-img-top" src={`https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${pokemon.ndex}.png`} alt=""/></a>
           {pokemon.nom}
         <div class="card-body">
         </div>
@@ -109,7 +108,7 @@ export default class Types extends React.Component {
           <title>Pokédex</title>
         </head>
         <div className="pokedex-header">
-          <img src={logo}/>
+          <img src={logo} alt=""/>
         </div>
         <div class="nav">
           <form class="form-group" onSubmit={this.handleSubmit}>
